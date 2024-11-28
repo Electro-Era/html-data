@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <style>
+    /* General Reset */
+    body, html {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    /* Center the form container */
+    .container {
+      width: 100%;
+      max-width: 500px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Form Header */
+    h4 {
+      margin-bottom: 20px;
+      font-size: 1.5rem;
+      text-align: center;
+      color: #444;
+    }
+
+    /* Form Inputs and Textarea */
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 10px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      outline: none;
+      transition: border-color 0.3s;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    textarea:focus {
+      border-color: #007BFF;
+    }
+
+    /* Submit Button */
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #007BFF;
+      color: #fff;
+      font-size: 1rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+
+    /* Form Accessibility and Spacing */
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      font-size: 0.9rem;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 600px) {
+      .container {
+        padding: 15px;
+      }
+
+      h4 {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form method="post" action="https://script.google.com/macros/s/AKfycbx7wDo43i-0PpurR8DujlX56Sve9y3RgOZ05q1vZ89G4Uw4GhpqAmyhE_r2wBp4Enqc/exec" name="contact-form">
+      <h4>Contact Us</h4>
+
+      <label for="your-name">Name</label>
+      <input type="text" id="your-name" name="your-name" placeholder="Name" required>
+
+      <label for="your-number">Number</label>
+      <input type="text" id="your-number" name="your-number" placeholder="Number" required>
+
+      <label for="your-email">Email</label>
+      <input type="email" id="your-email" name="your-email" placeholder="Email" required>
+
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" rows="7" placeholder="Your Message" required></textarea>
+
+      <input type="submit" value="Submit" id="submit">
+    </form>
+  </div>
+
+  <script src="Google Sheet.js"></script>
+</body>
+</html>
